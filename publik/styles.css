@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 header ul {
@@ -58,7 +59,6 @@ header ul li a:hover {
 
 footer {
     background-color: black;
-    color: #fff;
     text-align: center;
     padding: 0.1rem;
     position: fixed;
@@ -177,4 +177,96 @@ section {
 
 .work {
     width: 90vh;
+}
+
+/* Add this CSS to your main stylesheet */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* SKILLS */
+
+.skills-content {
+    color: rgb(177, 165, 165);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.skills-content h1 {
+    font-size: 40px;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.skill-item img {
+    width: 100px; /* Adjust this size according to your needs */
+    height: auto;
+    display: block;
+}
+
+
+/* PROJECT */
+.project-content {
+    color: rgb(177, 165, 165);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.project-content h1 {
+    font-size: 40px;
+}
+
+/* Add this CSS to your main stylesheet */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    flex: 1;
+    background-color: #252323; /* Background color for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    overflow: hidden; /* To prevent content from overflowing the card's bounds */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+}
+
+.card p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card slightly when hovered */
 }
