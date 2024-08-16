@@ -13,6 +13,7 @@ function Skills() {
                 <div class="skill-item"><img src="/assets/sass.png" alt="Skill 4"></div>
                 <div class="skill-item"><img src="/assets/bootstrap.png" alt="Skill 5"></div>
                 <div class="skill-item"><img src="/assets/tailwind.png" alt="Skill 6"></div>
+                <div class="skill-item"><img src="/assets/php.png" alt="Skill 6"></div>
             </div>
             <h1>Tools</h1>
             <div class="skills-grid">
