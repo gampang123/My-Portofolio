@@ -1,0 +1,180 @@
+/* styles.css */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(163, 160, 160);
+    color: white;
+}
+
+
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+header ul li {
+    align-items: center;
+    margin: 0 1rem;
+    display: inline;
+}
+
+header ul li a {
+    color: rgb(177, 165, 165);
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 5%;
+}
+
+header ul li a:hover {
+    font-weight: bold;
+    background: linear-gradient(90deg, red, yellow, green, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 2s infinite;
+}
+
+
+.logo {
+    width: 4%;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+
+/* HOME */
+
+.home-container {
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.animate-home {
+    opacity: 1;
+}
+
+.intro-text,
+.intro-image {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.animate-home .intro-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animate-home .intro-image {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Style for the text content */
+.text-content {
+    margin-right: 50px; 
+}
+
+.text-content h1 {
+    font-size: 35px;
+    text-align: left;
+}
+
+.text-content img {
+    align-items: right;
+}
+
+
+/* Style for the image content */
+.profile-image {
+    width: 200px;
+    height: 200px; /* Make sure the height and width are equal for a circular image */
+    border-radius: 50%;
+}
+
+
+
+
+/* Rainbow text effect */
+.rainbow-text {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 2s infinite;
+}
+
+/* Optional animation for rainbow effect */
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+/* ABOUT  */
+
+.about-content {
+    color: rgb(177, 165, 165);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+}
+
+.about-content h1 ul li{
+    text-decoration: none;
+}
+
+.educa {
+    width: 105vh;
+}
+
+.work {
+    width: 90vh;
+}
