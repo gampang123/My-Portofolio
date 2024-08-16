@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: black;
     color: white;
+    font-size: 16px;
 }
 
 
@@ -12,8 +13,8 @@ header {
     background-color: black;
     position: fixed;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -30,18 +31,23 @@ header ul {
 
 header ul li {
     align-items: center;
-    margin: 0 1rem;
     display: inline;
+    margin: 0 0.5rem;
 }
 
 header ul li a {
     color: rgb(177, 165, 165);
     text-decoration: none;
+    font-size: 14px;
 }
 
 
 .logo {
     width: 5%;
+}
+
+section {
+    padding: 1.5rem;
 }
 
 header ul li a:hover {
@@ -66,9 +72,6 @@ footer {
     bottom: 0;
 }
 
-section {
-    padding: 2rem;
-}
 
 
 /* HOME */
@@ -80,6 +83,7 @@ section {
     display: flex;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    flex-direction: column;
 }
 
 .home-content {
@@ -248,16 +252,16 @@ section {
 
 .card {
     flex: 1;
-    background-color: #252323; /* Background color for the card */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    overflow: hidden; /* To prevent content from overflowing the card's bounds */
+    background-color: #252323; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
 
 .card img {
-    width: 100%; /* Make the image fill the width of the card */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; 
+    height: auto; 
     display: block;
 }
 
@@ -270,3 +274,60 @@ section {
 .card:hover {
     transform: translateY(-10px); /* Lift the card slightly when hovered */
 }
+
+
+/* CONTACT */
+
+.contact-content {
+    color: rgb(177, 165, 165);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.contact-content h1 {
+    font-size: 40px;
+}
+
+@media (max-width: 767px) {
+    /* General padding for all sections */
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Specific padding adjustments for different sections */
+    .about-content,
+    .skills-content,
+    .project-content,
+    .home-content,
+    .contact-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 20px;
+    }
+    
+    
+    /* Style for the image content */
+    .profile-image {
+        width: 100px;
+        height: 100px; /* Make sure the height and width are equal for a circular image */
+        border-radius: 50%;
+    }
+
+    .skill-item img {
+        width: 45px; /* Adjust this size according to your needs */
+        height: auto;
+        display: block;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+    
+}
+

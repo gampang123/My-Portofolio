@@ -2,8 +2,10 @@
 function Contact() {
     const contactElement = document.createElement('section');
     contactElement.innerHTML = `
-        <h1>Contact Me</h1>
-        <p>You can reach me via email at: yourname@example.com</p>
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>Contact Me in Email: gampangrozaki@gmail.com</p>
+        </div>
     `;
     return contactElement;
 }
