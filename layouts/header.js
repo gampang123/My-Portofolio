@@ -6,7 +6,7 @@ function Header() {
         <ul>
             <li>
                 <a href="#home" class="logo-link">
-                    <img src="/assets/simson.PNG" alt="simson" class="logo">
+                    <img src="/assets/simson.png" alt="simson" class="logo">
                 </a>
             </li>
             <li><a href="#home">Home</a></li>
