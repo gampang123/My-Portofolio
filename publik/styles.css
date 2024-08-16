@@ -307,6 +307,13 @@ footer {
         padding-right: 20px;
     }
 
+    .about-content h1,
+    .skills-content h1,
+    .project-content h1,
+    .contact-content h1 {
+        font-size: 20px;
+    }
+
     .text-content h1 {
         font-size: 20px;
     }
@@ -320,7 +327,7 @@ footer {
     }
 
     .skill-item img {
-        width: 45px; /* Adjust this size according to your needs */
+        width: 42px; /* Adjust this size according to your needs */
         height: auto;
         display: block;
     }
