@@ -11,13 +11,9 @@ function Project() {
                     <img src="/assets/porto1.png" alt="Image 1">
                     <p>Project Gym App | Gamelab Indonesia</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/image2.jpg" alt="Image 2">
-                    <p>Image 2 Description</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/image3.jpg" alt="Image 3">
-                    <p>Image 3 Description</p>
+                <div class="card" onclick="window.location.href='https://agrio.ronirahmadi.com/';">
+                    <img src="/assets/porto2.png" alt="Image 2">
+                    <p>Agrio Pestisida Organik</p>
                 </div>
             </div>
         </div>
