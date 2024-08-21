@@ -166,6 +166,10 @@ footer {
     padding-right: 200px;
 }
 
+.about-content li {
+    list-style-type: square;
+}
+
 .about-content h1 {
     font-size: 40px;
 }
@@ -285,12 +289,16 @@ footer {
     padding-right: 200px;
 }
 
+.contact-content a{
+    text-decoration: none;
+}
+
 .contact-content h1 {
     font-size: 40px;
 }
 
 .fa {
-    padding-right: 30px;
+    padding-inline: 10px;
 }
 
 @media (max-width: 767px) {
@@ -367,7 +375,7 @@ footer {
     }
 
     .fa {
-        padding-right: 30px;
+        padding-inline: 5px;
     }
     
 }
