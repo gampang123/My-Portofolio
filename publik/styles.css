@@ -13,37 +13,41 @@ header {
     background-color: black;
     position: fixed;
     width: 100%;
-    padding-top: 8px;
+    padding-top: 20px;
     padding-bottom: 8px;
-    text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the entire content */
     align-items: center;
     z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: inline;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 header ul li {
-    align-items: center;
-    display: inline;
     margin: 0 0.5rem;
 }
 
 header ul li a {
     color: rgb(177, 165, 165);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
-
 .logo {
-    width: 5%;
+    width: 5%; 
 }
 
 section {
@@ -56,11 +60,6 @@ header ul li a:hover {
     -webkit-background-clip: text;
     color: transparent;
     animation: rainbow-animation 2s infinite;
-}
-
-
-.logo {
-    width: 4%;
 }
 
 footer {
@@ -290,6 +289,10 @@ footer {
     font-size: 40px;
 }
 
+.fa {
+    padding-right: 30px;
+}
+
 @media (max-width: 767px) {
     /* General padding for all sections */
     section {
@@ -305,7 +308,7 @@ footer {
     .contact-content {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 30px;
+        padding-top: 35px;
     }
 
     .about-content h1,
@@ -341,9 +344,18 @@ footer {
         font-size: 12px;
     }
 
+    header ul li a {
+        font-size: 14px;
+    }
+
     .footer {
         font-size: 11px;
     }
+
+    .logo {
+        width: 25%; 
+    }
+    
 
     /* PROJECT */
     .card-container {
@@ -352,6 +364,10 @@ footer {
 
     .card {
         margin: 10px 0;
+    }
+
+    .fa {
+        padding-right: 30px;
     }
     
 }
