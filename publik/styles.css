@@ -62,6 +62,21 @@ header ul li a:hover {
     animation: rainbow-animation 2s infinite;
 }
 
+header ul li a:active {
+    font-weight: bold;
+    background: linear-gradient(90deg, red, yellow, green, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: rainbow-animation 2s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 footer {
     background-color: black;
     text-align: center;

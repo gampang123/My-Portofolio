@@ -5,9 +5,7 @@ function About() {
 
     aboutElement.innerHTML = `
         <div class="about-content">
-            <h1 class="fade-up">
-                About Me
-            </h1>
+            <h1 class="fade-up">About Me</h1>
             <p class="fade-up">
                 My name is Gampang Rozaki, a student at Amikom Yogyakarta majoring in Informatics Engineering. 
                 I possess a positive personality, with a strong sense of responsibility and a cheerful demeanor. 
@@ -15,9 +13,7 @@ function About() {
                 including HTML, CSS, JavaScript, PHP, and Laravel.
             </p>
             </br>
-            <h1 class="fade-up">
-                Education
-            </h1>
+            <h1 class="fade-up">Education</h1>
             <ul>
                 <li class="fade-up">
                     <h3>MA Pondok Pabelan</h3>
@@ -43,25 +39,30 @@ function About() {
             </ul>
             <hr class="fade-up">
             </br>
-            <h1 class="fade-up">
-                Work Experience
-            </h1>
+            <h1 class="fade-up">Work Experience</h1>
             <ul>
                 <li class="fade-up">
                     <h3>Freelance</h3>
                     <table>
                         <tr>
-                            <td class="work">Wordpress Web Developper</td>
+                            <td class="work">Wordpress Web Developer</td>
                             <td>November-Desember 2023</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="fade-up">
+                    <h3>Internship</h3>
+                    <table>
+                        <tr>
+                            <td class="work">Wordpress Web Developer</td>
+                            <td>September-Januari 2025</td>
                         </tr>
                     </table>
                 </li>
             </ul>
             <hr class="fade-up">
             </br>
-            <h1 class="fade-up">
-                Organization
-            </h1>
+            <h1 class="fade-up">Organization</h1>
             <ul>
                 <li class="fade-up">
                     <h3>Staff Secretary Pondok Pabelan</h3>
@@ -76,7 +77,7 @@ function About() {
             <hr class="fade-up">
             <ul>
                 <li class="fade-up">
-                    <h3>Staff BEM Amikom University  Yoyakarta</h3>
+                    <h3>Staff BEM Amikom University Yogyakarta</h3>
                     <table>
                         <tr>
                             <td class="work">Ministry of Internal Affairs</td>
@@ -90,17 +91,38 @@ function About() {
         </div>
     `;
 
-    // Trigger animation when about is displayed
-    setTimeout(() => {
-        const fadeElements = aboutElement.querySelectorAll('.fade-up');
-        fadeElements.forEach((el, index) => {
-            setTimeout(() => {
+    // Function to handle scroll animation
+    function handleScroll() {
+        const fadeElements = document.querySelectorAll('.fade-up');
+        fadeElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.8 && rect.bottom > 0) {
                 el.classList.add('animated');
-            }, index * 100); // 1-second delay between each element
+            } else {
+                el.classList.remove('animated');
+            }
         });
-    }, 100);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run once on load
 
     return aboutElement;
 }
 
 export default About;
+
+// Add CSS for smooth fade effect
+const style = document.createElement('style');
+style.innerHTML = `
+    .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-up.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+document.head.appendChild(style);
