@@ -222,26 +222,54 @@ footer {
     color: rgb(177, 165, 165);
     padding-top: 100px;
     padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }
 
 .skills-content h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
-
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
     justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .skill-item img {
-    width: 100px; /* Adjust this size according to your needs */
+    width: 80px; /* Responsive size */
+    max-width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .skills-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    
+    .skill-item img {
+        width: 60px;
+    }
 }
 
 
@@ -298,19 +326,89 @@ footer {
 
 .contact-content {
     color: rgb(177, 165, 165);
-    padding-top: 100px;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
-.contact-content a{
+.contact-content a {
     text-decoration: none;
+    color: inherit;
 }
 
 .contact-content h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
+
+/* Social Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+/* Icon Colors */
+.github { background-color: #333; color: white; }
+.linkedin { background-color: #0077b5; color: white; }
+.instagram { background-color: #E1306C; color: white; }
+.whatsapp { background-color: #25D366; color: white; }
+
+/* Hover Effects */
+.contact-icons a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Contact Details */
+.contact-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.contact-details a {
+    font-weight: bold;
+    color: white;
+}
+
+.fa {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-icons {
+        gap: 15px;
+    }
+    
+    .contact-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .contact-content h1 {
+        font-size: 32px;
+    }
+
+    .contact-details p {
+        font-size: 16px;
+    }
+}
+
 
 .fa {
     padding-inline: 10px;

@@ -10,7 +10,7 @@ function Project() {
                 <div class="card" onclick="window.open('https://msib-6-sewa-lapangan-dan-gym-app-04.educalab.id/', '_blank');">
                     <img src="/assets/porto1.png" alt="Image 1">
                     <h3>Gym App | Project Gamelab Indonesia</h3>
-                    <p>Sistem manajemen penyewaan GYM yang sudah terintrgrasi pembayaran online menggunakan midtrans</p>
+                    <p>Sistem manajemen penyewaan GYM yang sudah terintegrasi pembayaran online menggunakan midtrans</p>
                 </div>
                 <div class="card" onclick="window.open('https://gadesain.com/', '_blank');">
                     <img src="/assets/gadesain.png" alt="Image 2">
@@ -26,6 +26,11 @@ function Project() {
                     <img src="/assets/iconhub.png" alt="Image 4">
                     <h3>Icon Hub | Manajemen Booking</h3>
                     <p>Website managemen booking room menggunakan laravel</p>
+                </div>
+                <div class="card" onclick="window.open('https://indonesiaunfccc.com/', '_blank');">
+                    <img src="/assets/unfcc.png" alt="Image 5">
+                    <h3>UNFCC COP</h3>
+                    <p>Indonesia Pavilion COP 29 UNFCCC</p>
                 </div>
             </div>
         </div>

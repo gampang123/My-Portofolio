@@ -42,23 +42,45 @@ function About() {
             <h1 class="fade-up">Work Experience</h1>
             <ul>
                 <li class="fade-up">
-                    <h3>Freelance</h3>
+                    <h3>Panitia Pemilihan Suara</h3>
                     <table>
                         <tr>
-                            <td class="work">Wordpress Web Developer</td>
-                            <td>November-Desember 2023</td>
+                            <td class="work">Panitia Pemilihan Suara Tinggat Desa Di Kecamatan Bandongan</td>
+                            <td>Juni 2024 - Februari 2025</td>
                         </tr>
                     </table>
                 </li>
+
+                <li class="fade-up">
+                    <h3>Freelance</h3>
+                    <table>
+                        <tr>
+                            <td class="work">Pengembangan Web UNFCC COP</td>
+                            <td>November 2024</td>
+                        </tr>
+                    </table>
+                </li>
+
                 <li class="fade-up">
                     <h3>Internship</h3>
                     <table>
                         <tr>
-                            <td class="work">Wordpress Web Developer</td>
-                            <td>September-Januari 2025</td>
+                            <td class="work">Web Developer CV. Karsa Prawira</td>
+                            <td>September 2024 - Januari 2025</td>
                         </tr>
                     </table>
                 </li>
+
+                <li class="fade-up">
+                    <h3>Freelance</h3>
+                    <table>
+                        <tr>
+                            <td class="work">Wordpress and Laravel Web Developer</td>
+                            <td>November 2024 - Now</td>
+                        </tr>
+                    </table>
+                </li>
+                
             </ul>
             <hr class="fade-up">
             </br>
